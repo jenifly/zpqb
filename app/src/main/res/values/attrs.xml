@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--透明渐变的TabView-->
+    <declare-styleable name="AlphaTabView">
+        <attr name="tabIconNormal" format="reference" />
+        <attr name="tabIconSelected" format="reference" />
+        <attr name="tabText" format="string" />
+        <attr name="tabTextSize" format="dimension" />
+        <attr name="textColorNormal" format="color" />
+        <attr name="textColorSelected" format="color" />
+        <attr name="badgeBackgroundColor" format="color" />
+        <attr name="paddingTexwithIcon" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ColorTrackTabViewIndicator">
+        <attr name="ctTabSelectedTextColor" format="color"/>
+        <attr name="ctTabIndicatorColor" format="color"/>
+        <attr name="ctTabTextColor" format="color"/>
+        <attr name="ctTabTextSize" format="dimension"/>
+        <attr name="ctTabWidth" format="dimension"/>
+        <attr name="ctTabGravity" format="enum">
+            <enum name="Grivity_Fill" value="0"/>
+            <enum name="Grivity_Center" value="1"/>
+        </attr>
+        <attr name="ctMode">
+            <enum name="scrollable" value="0"/>
+            <enum name="fixed" value="1"/>
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="ColorTrackView">
+        <attr name="ctvText" format="string"/>
+        <attr name="ctvText_size" format="dimension"/>
+        <attr name="ctvText_origin_color" format="color"/>
+        <attr name="ctvText_change_color" format="color"/>
+        <attr name="ctvProgress" format="float"/>
+        <attr name="ctvDirection" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="FastScrollRecyclerView">
+        <attr name="fastScrollAlwaysEnabled" format="boolean"/>
+        <attr name="fastScrollThumbCurvatureEnabled" format="boolean"/>
+        <attr name="fastScrollThumbActiveColor" format="reference|color"/>
+        <attr name="fastScrollThumbInactiveColor" format="reference|color"/>
+        <attr name="fastScrollTrackColor" format="reference|color"/>
+        <attr name="fastScrollPopupBackgroundColor" format="reference|color"/>
+        <attr name="fastScrollPopupTextColor" format="reference|color"/>
+        <attr name="fastScrollHideDelay" format="integer"/>
+        <attr name="fastScrollTextSize" format="dimension"/>
+        <attr name="fastScrollPopupPadding" format="dimension"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="21dp">
+        <ImageView
+            android:tint="@color/white"
+            android:id="@+id/questionbank_back"
+            android:layout_centerVertical="true"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="16dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_back"/>
+        <TextView
+            android:id="@+id/questionbank_titel"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="题库"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+        <ImageView
+            android:tint="@color/white"
+            android:id="@+id/questionbank_bookmarks"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="16dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_bookmarks"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroud_1">
+        <com.jenifly.zpqb.view.fastscrollrecyclerview.FastScrollRecyclerView
+            android:id="@+id/rv"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:fastScrollHideDelay="600"
+            app:fastScrollPopupBackgroundColor="?attr/colorAccent"
+            app:fastScrollPopupTextColor="@color/white"
+            app:fastScrollThumbActiveColor="?attr/colorAccent"
+            app:fastScrollThumbInactiveColor="?attr/colorAccent"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="21dp">
+        <ImageView
+            android:tint="@color/white"
+            android:id="@+id/setting_back"
+            android:layout_centerVertical="true"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="16dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_back"/>
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/regulation_titel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第一篇   技术设备"
+                android:textColor="@color/white"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/regulation_subtitel"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第一章   基本要求"
+                android:textColor="@color/white"
+                android:textSize="14dp"/>
+        </LinearLayout>
+        <ImageView
+            android:tint="@color/white"
+            android:id="@+id/regulation_bookmarks"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="16dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_bookmarks"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroud_1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <include layout="@layout/recyclerview_header_view" />
+
+        <com.jenifly.zpqb.view.fastscrollrecyclerview.FastScroll
+            android:id="@+id/rv_FastScroll"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:fastScrollHideDelay="600"
+            app:fastScrollPopupBackgroundColor="?attr/colorAccent"
+            app:fastScrollPopupTextColor="@color/white"
+            app:fastScrollThumbActiveColor="?attr/colorAccent"
+            app:fastScrollThumbInactiveColor="?attr/colorAccent"/>
+
+    </RelativeLayout>
+</LinearLayout>

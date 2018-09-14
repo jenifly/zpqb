@@ -133,10 +133,10 @@
             </RelativeLayout>
 
             <android.support.v7.widget.Toolbar
-                android:layout_marginTop="21dp"
                 android:id="@+id/fragment_mine_titel"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
+                android:layout_marginTop="20dp"
                 app:layout_collapseMode="pin"
                 app:contentInsetStart="0dp"
                 app:contentInsetEnd="0dp" />
@@ -157,10 +157,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="@color/backgroud_1">
+            android:background="@color/bg_main">
 
             <LinearLayout
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:id="@+id/testss"
@@ -199,11 +199,11 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:background="@drawable/btn_selected"
+                android:background="@color/solarTextColor"
                 android:orientation="vertical">
                 <TextView
                     android:layout_width="wrap_content"
@@ -217,22 +217,26 @@
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
                     <ImageView
+                        android:layout_weight="1"
+                        android:padding="4dp"
                         android:scaleType="centerCrop"
-                        android:layout_width="108dp"
-                        android:layout_height="80dp"
-                        android:src="@mipmap/icon_002"/>
-                    <ImageView
-                        android:layout_marginLeft="8dp"
-                        android:scaleType="centerCrop"
-                        android:layout_width="108dp"
+                        android:layout_width="1dp"
                         android:layout_height="80dp"
                         android:src="@mipmap/icon_003"/>
                     <ImageView
-                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:padding="4dp"
                         android:scaleType="centerCrop"
-                        android:layout_width="108dp"
+                        android:layout_width="1dp"
                         android:layout_height="80dp"
                         android:src="@mipmap/icon_007"/>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:padding="4dp"
+                        android:scaleType="centerCrop"
+                        android:layout_width="1dp"
+                        android:layout_height="80dp"
+                        android:src="@mipmap/icon_002"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -241,27 +245,31 @@
                     android:orientation="horizontal"
                     android:gravity="center_horizontal">
                     <ImageView
+                        android:layout_weight="1"
+                        android:padding="4dp"
                         android:scaleType="centerCrop"
-                        android:layout_width="108dp"
+                        android:layout_width="1dp"
                         android:layout_height="80dp"
                         android:src="@mipmap/icon_005"/>
                     <ImageView
-                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:padding="4dp"
                         android:scaleType="centerCrop"
-                        android:layout_width="108dp"
+                        android:layout_width="1dp"
                         android:layout_height="80dp"
                         android:src="@mipmap/icon_006"/>
                     <ImageView
-                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:padding="4dp"
                         android:scaleType="centerCrop"
-                        android:layout_width="108dp"
+                        android:layout_width="1dp"
                         android:layout_height="80dp"
                         android:src="@mipmap/icon_004"/>
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:background="@drawable/btn_selected"
@@ -294,13 +302,13 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/black_1"/>
+                    android:background="@color/hintTextColor"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:background="@color/backgroud_0"
+                android:background="@drawable/btn_selected"
                 android:orientation="horizontal"
                 android:gravity="center_vertical">
                 <ImageView
@@ -330,13 +338,13 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/black_1"/>
+                    android:background="@color/hintTextColor"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:background="@color/backgroud_0"
+                android:background="@drawable/btn_selected"
                 android:orientation="horizontal"
                 android:gravity="center_vertical">
                 <ImageView
@@ -356,7 +364,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:background="@drawable/btn_selected"
@@ -388,7 +396,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/black_1"/>
+                    android:background="@color/hintTextColor"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -423,7 +431,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/black_1"/>
+                    android:background="@color/hintTextColor"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -458,7 +466,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/black_1"/>
+                    android:background="@color/hintTextColor"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -482,8 +490,8 @@
                     android:textSize="16dp"/>
             </LinearLayout>
             <LinearLayout
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:background="@drawable/btn_selected"

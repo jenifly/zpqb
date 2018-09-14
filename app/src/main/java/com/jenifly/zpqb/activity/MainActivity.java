@@ -11,8 +11,10 @@ import android.support.v7.app.AppCompatActivity;
 import com.jenifly.zpqb.R;
 import com.jenifly.zpqb.fragment.FragmentDailyTest;
 import com.jenifly.zpqb.fragment.FragmentInformation;
+import com.jenifly.zpqb.fragment.FragmentMain;
 import com.jenifly.zpqb.fragment.FragmentMine;
 import com.jenifly.zpqb.fragment.FragmentRegulation;
+import com.jenifly.zpqb.helper.StuBarTranslucentAPI21Helper;
 import com.jenifly.zpqb.view.alphatabs.AlphaTabsIndicator;
 
 import java.util.ArrayList;
@@ -26,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        StuBarTranslucentAPI21Helper.initState(this);
         ViewPager mViewPger = (ViewPager) findViewById(R.id.mViewPager);
         MainAdapter mainAdapter = new MainAdapter(getSupportFragmentManager());
         mViewPger.setAdapter(mainAdapter);
@@ -34,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         alphaTabsIndicator = (AlphaTabsIndicator) findViewById(R.id.alphaIndicator);
         alphaTabsIndicator.setViewPager(mViewPger);
-
+        alphaTabsIndicator.setTabCurrenItem(2);
        /* alphaTabsIndicator.getTabView(0).showNumber(6);
         alphaTabsIndicator.getTabView(1).showNumber(888);
         alphaTabsIndicator.getTabView(2).showNumber(88);
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
             super(fm);
             fragments.add(new FragmentRegulation());
             fragments.add(new FragmentDailyTest());
+            fragments.add(new FragmentMain());
             fragments.add(new FragmentInformation());
             fragments.add(new FragmentMine());
         }

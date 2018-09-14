@@ -136,7 +136,7 @@ public class FragmentDailyTest extends Fragment {
 
             @Override
             protected Void doInBackground(Void... params) {
-                Cache.BaseColor = getResources().getColor(R.color.actionbar);
+                Cache.BaseColor = getResources().getColor(R.color.colorPrimary);
                 Cache.CrruentQBDataName = Cache.dataHelper.getQBSettingValue("CrruentQBDataName");
                 Cache.dataHelper.CreateQBTable(Cache.CrruentQBDataName);
                 count = Cache.dataHelper.getQBInfoList(Cache.CrruentQBDataName).size();

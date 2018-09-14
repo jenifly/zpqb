@@ -44,7 +44,7 @@
 
     <android.support.v4.view.ViewPager
         android:id="@+id/zjgushi_viewPager"
-        android:background="@color/backgroud_1"
+        android:background="@color/bg_main"
         android:overScrollMode="never"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

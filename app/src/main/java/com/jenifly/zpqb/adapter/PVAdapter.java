@@ -42,6 +42,9 @@ public class PVAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             TxVideoPlayerController controller = new TxVideoPlayerController(mContext);
             holder.setController(controller);
             return holder;
+        }else if(viewType == -1){
+            itemView = LayoutInflater.from(mContext).inflate(R.layout.item, parent, false);
+            return new HeadViewHolder(itemView);
         }else {
             itemView = LayoutInflater.from(mContext).inflate(R.layout.item_pics, parent, false);
             PicsViewHolder holder = new PicsViewHolder(itemView);
@@ -51,32 +54,43 @@ public class PVAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     @Override
     public int getItemViewType(int position){
-        if(position%2 == 0)
+        if(position == 0)
+            return -1;
+        if((position + 1) % 2 == 0)
             return 1;
         return 0;
     }
     
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        if (holder instanceof VideoViewHolder) {
-            VideoViewHolder videoViewHolder = (VideoViewHolder)holder;
-            final VideoUtils video = mVideoList.get(position);
-            videoViewHolder.bindData(video);
-            videoViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+        if(position == 0){
+            HeadViewHolder headViewHolder = (HeadViewHolder)holder;
+            headViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 
                 }
             });
-        }else {
-            PicsViewHolder picsViewHolder = (PicsViewHolder)holder;
-            picsViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
+        }else if (holder instanceof VideoViewHolder) {
+                VideoViewHolder videoViewHolder = (VideoViewHolder)holder;
+                final VideoUtils video = mVideoList.get(position - 1);
+                videoViewHolder.bindData(video);
+                videoViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
 
-                }
-            });
+                    }
+                });
+            }else {
+                PicsViewHolder picsViewHolder = (PicsViewHolder)holder;
+                picsViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                    }
+                });
         }
+
     }
 
     public interface OnItemClick{
@@ -85,12 +99,19 @@ public class PVAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     @Override
     public int getItemCount() {
-        return mVideoList.size();
+        return mVideoList.size() + 1;
     }
 
     public class PicsViewHolder extends RecyclerView.ViewHolder{
 
         public PicsViewHolder(View itemView) {
+            super(itemView);
+        }
+    }
+
+    public class HeadViewHolder extends RecyclerView.ViewHolder{
+
+        public HeadViewHolder(View itemView) {
             super(itemView);
         }
     }

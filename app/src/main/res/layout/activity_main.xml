@@ -14,7 +14,7 @@
     <com.jenifly.zpqb.view.alphatabs.AlphaTabsIndicator
         android:id="@+id/alphaIndicator"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="48dp"
         android:background="@color/white"
         android:orientation="horizontal"
         android:elevation="6dp">
@@ -23,11 +23,11 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:padding="6dp"
+            android:padding="4dp"
             app:tabIconNormal="@mipmap/icon_regulation"
             app:tabIconSelected="@mipmap/icon_regulation"
             app:tabText="规章"
-            app:tabTextSize="12sp"
+            app:tabTextSize="11sp"
             app:textColorNormal="#999999"
             app:textColorSelected="?attr/colorPrimary" />
 
@@ -35,11 +35,11 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:padding="6dp"
+            android:padding="4dp"
             app:tabIconNormal="@mipmap/icon_daliytest"
             app:tabIconSelected="@mipmap/icon_daliytest"
             app:tabText="每日"
-            app:tabTextSize="12sp"
+            app:tabTextSize="11sp"
             app:textColorNormal="#999999"
             app:textColorSelected="?attr/colorPrimary" />
 
@@ -47,11 +47,23 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:padding="6dp"
+            android:padding="4dp"
+            app:tabIconNormal="@mipmap/icon_mainpage"
+            app:tabIconSelected="@mipmap/icon_mainpage"
+            app:tabText="主页"
+            app:tabTextSize="11sp"
+            app:textColorNormal="#999999"
+            app:textColorSelected="?attr/colorPrimary" />
+
+        <com.jenifly.zpqb.view.alphatabs.AlphaTabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="4dp"
             app:tabIconNormal="@mipmap/icon_information_normal"
             app:tabIconSelected="@mipmap/icon_information_selected"
             app:tabText="资讯"
-            app:tabTextSize="12sp"
+            app:tabTextSize="11sp"
             app:textColorNormal="#999999"
             app:textColorSelected="?attr/colorPrimary" />
 
@@ -59,11 +71,11 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:padding="6dp"
+            android:padding="4dp"
             app:tabIconNormal="@mipmap/icon_mine_normal"
             app:tabIconSelected="@mipmap/icon_mine_selected"
             app:tabText="我的"
-            app:tabTextSize="12sp"
+            app:tabTextSize="11sp"
             app:textColorNormal="#999999"
             app:textColorSelected="?attr/colorPrimary" />
     </com.jenifly.zpqb.view.alphatabs.AlphaTabsIndicator>

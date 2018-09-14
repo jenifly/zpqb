@@ -34,7 +34,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:textSize="21dp"
-                    android:textColor="@color/black_0" />
+                    android:textColor="@color/mainTextColor" />
             </RelativeLayout>
         </ScrollView>
 
@@ -72,7 +72,7 @@
                 android:layout_marginRight="8dp"
                 android:layout_centerVertical="true"
                 android:src="@mipmap/icon_collect"
-                android:tint="@color/press_0"
+                android:tint="@color/hintTextColor"
                 android:scaleType="centerInside"
                 android:layout_toLeftOf="@+id/qusetion_item_ok" />
             <com.jenifly.zpqb.view.JImageView
@@ -84,7 +84,7 @@
                 android:layout_height="27dp"
                 android:scaleType="centerInside"
                 android:src="@mipmap/icon_correct"
-                android:tint="@color/press_0" />
+                android:tint="@color/hintTextColor" />
         </RelativeLayout>
     </LinearLayout>
 </android.support.v7.widget.CardView>

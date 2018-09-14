@@ -6,9 +6,9 @@
     android:orientation="vertical">
 
     <RelativeLayout
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginTop="21dp">
+        android:layout_height="48dp">
         <ImageView
             android:tint="@color/white"
             android:id="@+id/main_signin"
@@ -47,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/backgroud_1">
+        android:background="@color/bg_main">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/backgroud_0"
+            android:background="@color/solarTextColor"
             android:orientation="horizontal">
             <LinearLayout
                 android:layout_width="0dp"
@@ -123,7 +123,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/backgroud_0"
+            android:background="@color/solarTextColor"
             android:layout_weight="1">
             <com.jenifly.zpqb.view.JButton
                 android:id="@+id/main_start"
@@ -145,7 +145,7 @@
             android:paddingTop="6dp"
             android:paddingBottom="8dp"
             android:layout_marginBottom="6dp"
-            android:background="@color/backgroud_0"
+            android:background="@color/solarTextColor"
             android:orientation="vertical">
 
             <LinearLayout
@@ -253,21 +253,24 @@
                     android:layout_height="8dp"
                     android:orientation="horizontal"
                     android:layout_centerInParent="true">
-                    <TextView
+                    <ImageView
                         android:layout_width="4dp"
                         android:layout_height="4dp"
                         android:layout_margin="4dp"
-                        android:background="@color/press_0"/>
-                    <TextView
+                        android:tint="@color/hintTextColor"
+                        android:src="@drawable/bg_cricle"/>
+                    <ImageView
                         android:layout_width="4dp"
                         android:layout_height="4dp"
                         android:layout_margin="4dp"
-                        android:background="?attr/colorPrimary"/>
-                    <TextView
+                        android:tint="?attr/colorPrimary"
+                        android:src="@drawable/bg_cricle"/>
+                    <ImageView
                         android:layout_width="4dp"
                         android:layout_height="4dp"
                         android:layout_margin="4dp"
-                        android:background="@color/press_0"/>
+                        android:tint="@color/hintTextColor"
+                        android:src="@drawable/bg_cricle"/>
                 </LinearLayout>
 
             </RelativeLayout>

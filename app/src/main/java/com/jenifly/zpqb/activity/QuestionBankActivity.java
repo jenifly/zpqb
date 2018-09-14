@@ -19,6 +19,7 @@ import android.widget.TextView;
 
 import com.jenifly.zpqb.ItemDecoration.FloatingItemDecoration;
 import com.jenifly.zpqb.R;
+import com.jenifly.zpqb.helper.StuBarTranslucentAPI21Helper;
 import com.jenifly.zpqb.info.QB_Info;
 import com.jenifly.zpqb.cache.Cache;
 import com.jenifly.zpqb.utils.KeywordUtil;
@@ -54,6 +55,7 @@ public class QuestionBankActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.questionbank_activity);
+        StuBarTranslucentAPI21Helper.initState(this);
         ButterKnife.bind(this);
         ArrayList<QB_Info> questionList = new ArrayList<>();
         switch (Cache.QBType){

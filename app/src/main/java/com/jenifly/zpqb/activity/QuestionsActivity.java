@@ -21,6 +21,7 @@ import com.jenifly.zpqb.adapter.QuestionsAdapter;
 import com.jenifly.zpqb.cache.Cache;
 import com.jenifly.zpqb.data.DataHelper;
 import com.jenifly.zpqb.data.SqliteHelper;
+import com.jenifly.zpqb.helper.StuBarTranslucentAPI21Helper;
 import com.jenifly.zpqb.info.QB_Info;
 import com.jenifly.zpqb.infomation.QB_zhjwdrz;
 import com.jenifly.zpqb.view.AlertDialog;
@@ -75,6 +76,7 @@ public class QuestionsActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question_activity);
+        StuBarTranslucentAPI21Helper.initState(this);
         ButterKnife.bind(this);
         loadData();
         initView();

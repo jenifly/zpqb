@@ -84,7 +84,7 @@ public class ColorProgressBar extends View {
         }
         if(remaining>0) {
             mPaint.setColor(baseColor);
-            tPaint.setColor(getContext().getResources().getColor(R.color.black_1));
+            tPaint.setColor(getContext().getResources().getColor(R.color.mainTextColor));
             if(baseWidth-tw*2-correctWidth<0)
                 baseWidth = correctWidth+tw*2;
             canvas.drawRect(correctWidth,0,baseWidth,height,mPaint);

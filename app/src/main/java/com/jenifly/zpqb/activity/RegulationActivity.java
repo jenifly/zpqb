@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.jenifly.zpqb.R;
 import com.jenifly.zpqb.adapter.RegulationAdapter;
+import com.jenifly.zpqb.helper.StuBarTranslucentAPI21Helper;
 import com.jenifly.zpqb.infomation.Regulation_Info;
 import com.jenifly.zpqb.utils.ScreenUtil;
 import com.jenifly.zpqb.view.fastscrollrecyclerview.FastScroll;
@@ -40,6 +41,7 @@ public class RegulationActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.regulation_activity);
+        StuBarTranslucentAPI21Helper.initState(this);
         ButterKnife.bind(this);
 
         regulationAdapter = new RegulationAdapter(this,new Regulation_Info().Info);

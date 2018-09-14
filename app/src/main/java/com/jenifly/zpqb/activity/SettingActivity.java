@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import com.jenifly.zpqb.R;
 import com.jenifly.zpqb.cache.Cache;
 import com.jenifly.zpqb.data.SqliteHelper;
+import com.jenifly.zpqb.helper.StuBarTranslucentAPI21Helper;
 import com.jenifly.zpqb.infomation.QB_zhjwdrz;
 import com.jenifly.zpqb.view.AlertDialog;
 import com.jenifly.zpqb.view.ChooseTSDialog;
@@ -33,6 +34,7 @@ public class SettingActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
+        StuBarTranslucentAPI21Helper.initState(this);
         ButterKnife.bind(this);
     }
 

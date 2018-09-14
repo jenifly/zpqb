@@ -12,6 +12,7 @@ import com.jenifly.zpqb.R;
 import com.jenifly.zpqb.fragment.FragmentZJPV;
 import com.jenifly.zpqb.fragment.FragmentZJPics;
 import com.jenifly.zpqb.fragment.FragmentZJVideo;
+import com.jenifly.zpqb.helper.StuBarTranslucentAPI21Helper;
 import com.xiao.nicevideoplayer.NiceVideoPlayerManager;
 
 import java.util.ArrayList;
@@ -29,12 +30,13 @@ public class ZJgushiActivity extends AppCompatActivity {
     @BindView(R.id.zjgushi_tab) TabLayout colorTrackTabLayout;
     @BindView(R.id.zjgushi_viewPager) ViewPager mViewPager;
 
-    private String[] titles = new String[]{"视频", "图文", "混排"};
+    private String[] titles = new String[]{"视频", "图文", "混s排"};
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.zjgushi_mian);
+        StuBarTranslucentAPI21Helper.initState(this);
         ButterKnife.bind(this);
         loadViewLayout();
     }
